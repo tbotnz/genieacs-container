@@ -12,7 +12,12 @@ A simple example of a a containerised genieacs deployment
 ```
 git clone https://github.com/tbotnz/genieacs-container.git
 cd genieacs-container
+
+------ RUN with no dummy device
 sudo docker-compose up --build
+
+------ RUN with dummy device
+docker-compose -f docker-compose-with-device-sim.yml up --build -d
 ```
 
 you can then access genieacs via `http://localhost:3000`
